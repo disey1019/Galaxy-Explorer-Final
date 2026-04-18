@@ -13,7 +13,16 @@ import { Globe } from 'lucide-react';
 
 export default function App() {
   const [currentLevelId, setCurrentLevelId] = useState<string | null>(null);
-  const [completedLevels, setCompletedLevels] = useState<string[]>([]);
+  // 讀取進度：一開始先去 localStorage 找有沒有舊紀錄
+  const [completedLevels, setCompletedLevels] = useState<string[]>(() => {
+    const saved = localStorage.getItem('galaxy_completed');
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // 儲存進度：只要 completedLevels 有變化，就自動存進手機裡
+  useEffect(() => {
+    localStorage.setItem('galaxy_completed', JSON.stringify(completedLevels));
+  }, [completedLevels]);
   const [showFinalModal, setShowFinalModal] = useState(false);
 
   const currentLevel = LEVELS.find((l) => l.id === currentLevelId);
