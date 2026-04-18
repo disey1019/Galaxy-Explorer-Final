@@ -4,7 +4,7 @@ export const LEVELS: Level[] = [
   {
     id: 'prehistoric-culture',
     title: '銀河神話與史前文化',
-    heroImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDwU5zC5nyK9nFDzzjLPFdcb-BodfDXF9bL7UYruPNO9gyhdd1oLgOlPcxol1AJ7Kw4OB2Fm19envshR7teQsE7qYbO-vKNmBG4DHtr1F1XwE3x_FEjIUPQtZtM3oMQd94BYTBfmI6xxY5LA_8ZmcjQUio1_1iGmluIyGd6wNymvoeAWAG7hRvRL0u2rBNZbBR6ZIXQfuD6-_vevLwrizdyuIVpuFii-LsvhyYMgWO2zAHtuxnI7xYyuv5H4fSVdZ6DFZa71qoIB64',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_1.jpg',
     questions: [
       {
         id: 'pc-1',
@@ -47,7 +47,7 @@ export const LEVELS: Level[] = [
   {
     id: 'literature-art',
     title: '文學與藝術的銀河',
-    heroImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDehyuVxTWy_B3wLEXqAQc-T5ZGrJPiZ2IpTlOg1mIXvvj6jENDyB1ieALRUDTb2BPrBY3tf-OEMJDRq_FzNZwk7KNVHSGyIz6yjhPBY46S2yve9yz5Kj5CnIeTi3mo2qXDirENRE_FFEKBZbZMb-2af1XmNmw0R6vps4moS02TUquslqb7TnXkS8lftHfamPHipC5jWCmE-nzFRN844m1l4q3mkUAkxp6Chttulpl2O1_UiqUXLJ3TORRq7247dquH3XHbsrEt9MQ',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_2.jpg',
     questions: [
       {
         id: 'la-1',
@@ -78,7 +78,7 @@ export const LEVELS: Level[] = [
   {
     id: 'myths-legends',
     title: '東西方的銀河傳說',
-    heroImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBlldi69nLFXJ_cpgP3-IiZugPlpjRcs2EFteiXQx9rRXFOgyWRZ3HHxuOSyRhfqleUlBAqR6xG5SMq3xxDjeDYPPCNb8Bv23-_nYAridGBi0y6RBzwKrYf5obf5dZ-4nqEH5lXh25CXHY1KZYnubu1RUb165LOwRWDKB3S1D0RIvZEFuEBxFmRYNsVNB4MrQAFiRIuIHKTiQuqp51NSeXv-ndAv7lGPkSamDA7gPXkQcJr9ewPL4GUBQgoyhK3SE-6xyEKdnJ6bio',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_3.jpg',
     questions: [
       {
         id: 'ml-1',
@@ -111,7 +111,7 @@ export const LEVELS: Level[] = [
   {
     id: 'galaxy-heart',
     title: '銀河之心',
-    heroImage: 'https://lh3.googleusercontent.com/aida/ADBb0uiPoCWSLsfnNtE-BbSznrA5buczIBsf_RpGZbtkPI_ybzmVyt-1PvOI6fYRft4WvSEtz4vglTyi20FnyUV50YKoIrwNJ72Pt8fE1p2kpz2Ejg3aZZZ5Pther-y9R4n8rx-PQOQHRILlr23IHp5zkKSDORyjIF9Bc38x2rkpLnMBrtgunA3Q8w_Q4Xg4gSRNyy7d_uwLpiXD9qMvIXrPEOKYZzT3BQEUKhtkMfsj2HwBfdkD5KpeElzt9TAxTjyGgXlb-a-oB-QS5g',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_4.jpg',
     questions: [
       {
         id: 'gh-1',
@@ -178,7 +178,7 @@ export const LEVELS: Level[] = [
   {
     id: 'seasons',
     title: '銀河的四季風貌',
-    heroImage: 'https://lh3.googleusercontent.com/aida/ADBb0ujYtIOyCEwTC-GR6D-krJTCrYVYDmjQhVAKlg6p1oOJHNF4FqO4PMFnwn6uskoXwB5xZ3D9nU3NTqQpVt4uYMC9H3WG9YV-BpLp7WTXYlW0bJHX71senha0ms5hA70rt4Yd2Obd7IPM0g6hWN6omT8nImb7_q9Xe0hWCHtSz091aPgcZI5yQZKrNFM8hxJvl3X0ZKCIvtM9zMLWTUV3ppJYxUHCtvgQ42xAQ792WzrKJHff_A8-DOXrdeoBc2Xjmzr9hFmpVetyqA',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_5.jpg',
     missionObjective: 'Orbital Surveillance: Seasonal Drift',
     questions: [
       {
@@ -210,7 +210,7 @@ export const LEVELS: Level[] = [
   {
     id: 'gaia-mission',
     title: '蓋亞任務',
-    heroImage: 'https://lh3.googleusercontent.com/aida/ADBb0uhGV_1roreew1cy7zxpzwoC5DcfTr8qHYlCIIyyNNMoRHZn94_xiwz2Jouo4K3XGgDb6gq1sDx07N21tcRxHoukFo-ptUpWNrZFsrkMSddOfOJXKd6vSqa8g9czAE4pRxtjLktAcZJzWFg5zZbsr2HkjCmRRXPwz9ZqAJmsJa672nPHXxTgF0mVc4ybvaVWRzfXCygnVBM8B2cSwA-7h-lVooDAH-4x_PRHdjqHdb_9_5rrLnqFb2_KjYsbDgbDgsKhmPHuiUfeaQ',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_6.jpg',
     questions: [
       {
         id: 'gm-1',
@@ -265,7 +265,7 @@ export const LEVELS: Level[] = [
   {
     id: 'future-past',
     title: '銀河的過去與未來',
-    heroImage: 'https://lh3.googleusercontent.com/aida/ADBb0ujv1swGYxFwh2aaLlNX0yGYtNbvDImyL4CReIxBG035cPslNopsB1hHAQUszaOz2ntMbJftIICutmqWWbezloPb2ikQtSSjepAzmzlghxj564xZSyw46X2R9Hz3ujw0CjZu_rDRPkAe3VX71G_bc9k-K3CP3VShn3mu52XasyAkCJDt21PSOLtmj1BLwOLRP9IiXknUf8Ft3Nc4lY5q-eUEWncR-JMveB3bYPCGfG9R025kOgQXOsiSRcIzfGm5POM_KcZRHviT',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_7.jpg',
     questions: [
       {
         id: 'fp-1',
@@ -320,7 +320,7 @@ export const LEVELS: Level[] = [
   {
     id: 'webb-telescope',
     title: '韋伯望遠鏡',
-    heroImage: 'https://lh3.googleusercontent.com/aida/ADBb0uizEy3_3dSzLp2yIom2L0KF4xb_6z1Z4yeyNz31smXymQIAzS5-Dg14pvBXEt9ENZDrTwObevfrxAG5Qpv37BTa5M6bkik0cdCMK6Mo6ePDKYvAZKS0pddTZfBk3SCOUoonw8D2goiR-fLurDG65MF6yXw_Om5vbRi6J_Ai300vcLHeuzHEexwi2bSp2vJI1zLRFrIDchHhVKA4NyKtF1WLm7nUjkY5sd9aA6gC0vsoAFk6l5Ca3o9KQlQDTUar-78k79Fw4iDPpg',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_8.jpg',
     questions: [
       {
         id: 'wt-1',
@@ -351,7 +351,7 @@ export const LEVELS: Level[] = [
   {
     id: 'black-hole',
     title: '超大質量黑洞',
-    heroImage: 'https://lh3.googleusercontent.com/aida/ADBb0ugjEOjI-I0PclE-Jtqq_lCc3wRTOhkkFo3WrTxj6QKwcxOg-06BuDiwVrZVXrRk9tDd-ot8rla_EUNWLl1PLx4q7DSc3HbvfnOjBtoO1PTrjd-ZlyoryV-TCvGKOszvOv6QpO9OT6HNK7ELTQIktKA8WfOHC5WiOc_ut7yK9hbVWhVFP-Xuto_usD-0RWUrCFGjXYKQqTBHXcnaKWgeyiyU5XSy5UGO-rdpfXZ0pwrSP6WuuYWkfPNYL1iViyNtuhzFYYQtkL8EJg',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_9.jpg',
     missionObjective: 'Deep Space Expedition MISSION 04',
     questions: [
       {
@@ -371,7 +371,7 @@ export const LEVELS: Level[] = [
   {
     id: 'conditions',
     title: '適合觀賞銀河的條件',
-    heroImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDDC-iWXWb2JgY28ogq-MEiclyayY6nMDWpK0ZL8mzhi7DEeeq_vG_Qq4YU5ruqy4J5PPb_JtOWvlaFOFDc57cxi7J4ZvnYA1dpPihwbaUic7V3A4WxqWPyvTsbeFk0tB-YNzxLTXordaVmxPW-yOqqznClbHl_boboD1v_eyyC9mwGmXjS83xVFmlY-Rss2fBSGRTa9n-pODY_pMFjcyj5tPCMKXsfadpPU2eTYmUEdE4FMrD6mCo6IXEbCgx0IDinsF_Dpn46oms',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_10.jpg',
     questions: [
       {
         id: 'c-1',
