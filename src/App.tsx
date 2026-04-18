@@ -82,6 +82,14 @@ export default function App() {
                   銀河不可思議之旅
                 </h1>
               </div>
+              {isAllCompleted && (
+                <button 
+                  onClick={() => setShowFinalModal(true)}
+                  className="px-4 py-2 bg-primary/20 border border-primary text-primary font-bold rounded-lg text-sm shadow-[0_0_10px_rgba(34,211,238,0.3)] animate-pulse"
+                >
+                  顯示兌換碼
+                </button>
+              )}
             </header>
 
             <StarMap onNodeClick={handleNodeClick} completedLevels={completedLevels} />
@@ -147,7 +155,18 @@ export default function App() {
                   onClick={() => setShowFinalModal(false)}
                   className="mt-6 w-full py-4 bg-primary text-surface font-display font-bold rounded-xl active:scale-[0.98] transition-transform shadow-[0_4px_20px_rgba(34,211,238,0.3)] hover:brightness-110"
                 >
-                  確認收下
+                  關閉畫面
+                </button>
+                <button 
+                  onClick={() => {
+                    if (confirm('確定要清除所有進度並重新開始嗎？')) {
+                      setCompletedLevels([]);
+                      setShowFinalModal(false);
+                    }
+                  }}
+                  className="mt-2 w-full py-3 text-white/50 text-sm hover:text-white transition-colors"
+                >
+                  清除紀錄並重新開始
                 </button>
               </div>
 
