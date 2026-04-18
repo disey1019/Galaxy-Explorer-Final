@@ -45,21 +45,21 @@ export const LevelView: React.FC<LevelViewProps> = ({ level, onBack, onComplete 
     <div className="relative min-h-screen flex flex-col bg-surface overflow-x-hidden">
       {/* HUD Header */}
       <header className="fixed top-0 w-full z-[60] bg-[#05070A]/80 backdrop-blur-3xl flex items-center justify-between px-6 py-4 border-b border-primary/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-start w-32">
           <button 
             onClick={onBack}
             className="flex items-center gap-2 text-primary/80 hover:text-primary transition-colors active:scale-95"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="hidden md:inline font-display text-xs tracking-widest uppercase font-bold">Back to Map</span>
+            <span className="hidden md:inline font-display text-xs tracking-widest uppercase font-bold">Back</span>
           </button>
         </div>
         <div className="flex items-center gap-2">
           <Rocket className="w-5 h-5 text-primary" />
           <h1 className="text-lg font-bold text-primary drop-shadow-[0_0_8px_rgba(34,211,238,0.6)] font-display tracking-[0.2em] uppercase">QUEST LOG</h1>
         </div>
-        <div className="flex items-center gap-4">
-          <BarChart3 className="w-5 h-5 text-slate-500 hover:text-primary transition-colors cursor-pointer" />
+        <div className="w-32 flex justify-end">
+          {/* Spacer */}
         </div>
       </header>
 

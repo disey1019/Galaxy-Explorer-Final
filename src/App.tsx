@@ -28,13 +28,30 @@ export default function App() {
   const currentLevel = LEVELS.find((l) => l.id === currentLevelId);
   const isAllCompleted = completedLevels.length === LEVELS.length;
 
+  // 處理 URL Hash 路由：重整網頁時能停留在原本關卡
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && LEVELS.some(l => l.id === hash)) {
+        setCurrentLevelId(hash);
+      } else {
+        setCurrentLevelId(null);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange(); // 初次載入執行一次
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   const handleNodeClick = (levelId: string) => {
     if (completedLevels.includes(levelId)) return;
-    setCurrentLevelId(levelId);
+    window.location.hash = levelId;
   };
 
   const handleBack = () => {
-    setCurrentLevelId(null);
+    window.location.hash = '';
   };
 
   const handleComplete = (levelId: string) => {
