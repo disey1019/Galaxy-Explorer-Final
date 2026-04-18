@@ -14,7 +14,6 @@ import { Globe } from 'lucide-react';
 export default function App() {
   const [currentLevelId, setCurrentLevelId] = useState<string | null>(null);
   const [completedLevels, setCompletedLevels] = useState<string[]>([]);
-  const [stats, setStats] = useState({ today: 320, total: 15420 });
   const [showFinalModal, setShowFinalModal] = useState(false);
 
   const currentLevel = LEVELS.find((l) => l.id === currentLevelId);
@@ -33,10 +32,6 @@ export default function App() {
     if (!completedLevels.includes(levelId)) {
       const nextCompleted = [...completedLevels, levelId];
       setCompletedLevels(nextCompleted);
-      setStats(prev => ({ 
-        today: prev.today + 50, 
-        total: prev.total + 50 
-      }));
 
       if (nextCompleted.length === LEVELS.length) {
         setShowFinalModal(true);
@@ -77,11 +72,6 @@ export default function App() {
                 <h1 className="text-xl md:text-2xl font-bold tracking-widest text-primary drop-shadow-[0_0_8px_rgba(34,211,238,0.8)] font-display uppercase">
                   銀河不可思議之旅
                 </h1>
-              </div>
-              <div className="text-right">
-                <span className="font-display text-xs md:text-sm text-primary tracking-tighter">
-                  今日：{stats.today} | 累計：{stats.total}
-                </span>
               </div>
             </header>
 
