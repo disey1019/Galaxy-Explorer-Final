@@ -16,7 +16,7 @@ export const StarMap: React.FC<StarMapProps> = ({ onNodeClick, completedLevels }
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-[20s] animate-slow-zoom"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.6), rgba(5, 7, 10, 0.8)), url(${import.meta.env.BASE_URL}images/bg_starmap.jpg)`,
+          backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.6)), url(https://images.unsplash.com/photo-1464802686167-b939a67e06a1?auto=format&fit=crop&q=80&w=2048)`,
           backgroundAttachment: 'fixed'
         }}
       />

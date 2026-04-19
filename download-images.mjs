@@ -24,7 +24,7 @@ async function main() {
   const starMapPath = path.join(process.cwd(), 'src', 'components', 'StarMap.tsx');
   let starMapContent = fs.readFileSync(starMapPath, 'utf8');
 
-  const urlRegex = /https:\/\/lh3\.googleusercontent\.com\/[^'"]+/g;
+  const urlRegex = /https:\/\/(?:lh3\.googleusercontent\.com|images\.unsplash\.com)\/[^'"]+/g;
   const constantsUrls = [...new Set(constantsContent.match(urlRegex) || [])];
   const starMapUrls = [...new Set(starMapContent.match(urlRegex) || [])];
   
@@ -35,7 +35,6 @@ async function main() {
     const filename = `hero_${counter++}.jpg`;
     console.log(`下載中: ${filename}`);
     await download(url, path.join(publicImgDir, filename));
-    // 將原本的字串替換為 Vite 的環境變數寫法
     constantsContent = constantsContent.replace(`'${url}'`, `import.meta.env.BASE_URL + 'images/${filename}'`);
   }
 
@@ -44,10 +43,9 @@ async function main() {
     console.log(`下載中: ${filename}`);
     await download(url, path.join(publicImgDir, filename));
     
-    // 替換 StarMap.tsx 中的 inline style
-    const oldStr = `'linear-gradient(rgba(5, 7, 10, 0.6), rgba(5, 7, 10, 0.8)), url(${url})'`;
-    const newStr = `\`linear-gradient(rgba(5, 7, 10, 0.6), rgba(5, 7, 10, 0.8)), url(\${import.meta.env.BASE_URL}images/${filename})\``;
-    starMapContent = starMapContent.replace(oldStr, newStr);
+    // 替換 StarMap.tsx 中的 inline style (支援不同程度的 gradient)
+    const starMapUrlRegex = new RegExp(`linear-gradient\\(rgba\\(5, 7, 10, [\\d.]+\\), rgba\\(5, 7, 10, [\\d.]+\\)\\), url\\(${url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\)`, 'g');
+    starMapContent = starMapContent.replace(starMapUrlRegex, `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.6)), url(\${import.meta.env.BASE_URL}images/${filename})`);
   }
 
   fs.writeFileSync(constantsPath, constantsContent);
