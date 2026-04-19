@@ -24,7 +24,7 @@ async function main() {
   const starMapPath = path.join(process.cwd(), 'src', 'components', 'StarMap.tsx');
   let starMapContent = fs.readFileSync(starMapPath, 'utf8');
 
-  const urlRegex = /https:\/\/(?:lh3\.googleusercontent\.com|images\.unsplash\.com)\/[^'"]+/g;
+  const urlRegex = /https:\/\/(?:lh3\.googleusercontent\.com|images\.unsplash\.com|upload\.wikimedia\.org)\/[^'"]+/g;
   const constantsUrls = [...new Set(constantsContent.match(urlRegex) || [])];
   const starMapUrls = [...new Set(starMapContent.match(urlRegex) || [])];
   

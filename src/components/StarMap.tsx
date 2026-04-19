@@ -11,15 +11,13 @@ interface StarMapProps {
 
 export const StarMap: React.FC<StarMapProps> = ({ onNodeClick, completedLevels }) => {
   return (
-    <main className="relative h-screen w-full overflow-hidden">
-      {/* Galaxy Background Map */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-[20s] animate-slow-zoom"
-        style={{ 
-          backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.6)), url(https://images.unsplash.com/photo-1464802686167-b939a67e06a1?auto=format&fit=crop&q=80&w=2048)`,
-          backgroundAttachment: 'fixed'
-        }}
-      />
+    <main 
+      className="relative min-h-screen w-full overflow-hidden bg-cover bg-center"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.4)), url(https://upload.wikimedia.org/wikipedia/commons/8/89/Milky_Way_2005.jpg)`,
+      }}
+    >
+      {/* 移除原本失效的備用層 */}
 
       {/* Nodes Layer */}
       <div className="absolute inset-0 z-10 p-10 flex items-center justify-center">
@@ -78,8 +76,7 @@ export const StarMap: React.FC<StarMapProps> = ({ onNodeClick, completedLevels }
         </div>
       </div>
 
-      {/* Floating UI Overlays */}
-      <div className="absolute inset-0 pointer-events-none opacity-40 mix-blend-screen bg-radial-[circle_at_center,_transparent_0%,_#05070A_100%]" />
+      {/* Floating UI Overlays - Removed dark vignette for testing */}
     </main>
   );
 };

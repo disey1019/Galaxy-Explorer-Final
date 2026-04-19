@@ -10,6 +10,7 @@ import { LevelView } from './components/LevelView';
 import { Level } from './types';
 import { LEVELS } from './constants';
 import { Globe } from 'lucide-react';
+import { cn } from './lib/utils';
 
 export default function App() {
   const [currentLevelId, setCurrentLevelId] = useState<string | null>(null);
@@ -70,15 +71,10 @@ export default function App() {
       {/* Dynamic Background */}
       <div className="fixed inset-0 pointer-events-none -z-10">
         <div className="absolute inset-0 bg-[#05070A]" />
+        {/* 如果 StarMap 正在顯示，我們降低這個背景的遮擋感 */}
+        <div className={cn("absolute inset-0 transition-opacity duration-1000", currentLevelId ? "opacity-100" : "opacity-30")} />
         <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
-        <div 
-          className="absolute inset-0 opacity-20" 
-          style={{ 
-            backgroundImage: 'radial-gradient(#2fd9f4 0.5px, transparent 0.5px)', 
-            backgroundSize: '40px 40px' 
-          }} 
-        />
       </div>
 
       <AnimatePresence mode="wait">
