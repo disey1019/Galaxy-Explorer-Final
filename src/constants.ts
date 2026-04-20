@@ -214,7 +214,7 @@ export const LEVELS: Level[] = [
     questions: [
       {
         id: 'gm-1',
-        text: '蓋亞（Gaia）望遠鏡目前位於何處進行觀測任務？',
+        text: '蓋亞（Gaia）望遠鏡目前位於何處?',
         source: '任務的時間與地點',
         options: [
           { id: 'A', text: '月球背面' },
