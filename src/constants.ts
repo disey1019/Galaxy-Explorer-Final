@@ -220,7 +220,7 @@ export const LEVELS: Level[] = [
           { id: 'A', text: '月球背面' },
           { id: 'B', text: '火星軌道' },
           { id: 'C', text: '地球同步軌道' },
-          { id: 'D', text: '第二拉格朗日點（L2）附近' },
+          { id: 'D', text: '地球附近退休軌道' },
         ],
         correctAnswer: 'D',
       },
