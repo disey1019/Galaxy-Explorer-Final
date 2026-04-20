@@ -12,9 +12,9 @@ interface StarMapProps {
 export const StarMap: React.FC<StarMapProps> = ({ onNodeClick, completedLevels }) => {
   return (
     <main 
-      className="relative min-h-screen w-full overflow-hidden bg-cover bg-center"
+      className="relative min-h-screen w-full overflow-hidden bg-cover bg-center z-0"
       style={{ 
-        backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.4)), url(https://upload.wikimedia.org/wikipedia/commons/8/89/Milky_Way_2005.jpg)`,
+        backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.4)), url(https://www.eso.org/public/archives/images/screen/eso1339e.jpg)`,
       }}
     >
       {/* 移除原本失效的備用層 */}

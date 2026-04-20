@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Download Remote Images
+        run: node download-images.mjs
+
       - name: Build
         run: npm run build
         
