@@ -30,18 +30,6 @@ export const LEVELS: Level[] = [
         ],
         correctAnswer: 'A',
       },
-      {
-        id: 'pc-3',
-        text: '桑（Saan）族人利用銀河來傳授什麼樣的族群記憶？',
-        source: '非洲原住民',
-        options: [
-          { id: 'A', text: '農業耕種的時間表' },
-          { id: 'B', text: '狩獵知識與自然倫理' },
-          { id: 'C', text: '建造金字塔的工程圖示' },
-          { id: 'D', text: '海上航行的導航技術' },
-        ],
-        correctAnswer: 'B',
-      },
     ],
   },
   {
@@ -61,18 +49,6 @@ export const LEVELS: Level[] = [
         ],
         correctAnswer: 'C',
       },
-      {
-        id: 'la-2',
-        text: '在梵谷的名畫《星夜》中，天空那些強烈的流動線條，可能受到了什麼科學概念的啟發？',
-        source: '《星夜》梵谷',
-        options: [
-          { id: 'A', text: '彗星經過的尾跡' },
-          { id: 'B', text: '螺旋星系的樣貌' },
-          { id: 'C', text: '太陽風的流動' },
-          { id: 'D', text: '黑洞的事件視界' },
-        ],
-        correctAnswer: 'B',
-      },
     ],
   },
   {
@@ -80,19 +56,6 @@ export const LEVELS: Level[] = [
     title: '東西方的銀河傳說',
     heroImage: import.meta.env.BASE_URL + 'images/hero_3.jpg',
     questions: [
-      {
-        id: 'ml-1',
-        category: 'Greek Culture',
-        text: '古希臘哲學家亞里斯多德（Aristotle）如何以自然哲學解釋銀河的成因？',
-        source: '希臘文化',
-        options: [
-          { id: 'A', text: '天界神聖的乳汁' },
-          { id: 'B', text: '大氣層上方蒸氣燃燒形成' },
-          { id: 'C', text: '恆星密集排列的光芒' },
-          { id: 'D', text: '宇宙早期的塵埃帶' },
-        ],
-        correctAnswer: 'B',
-      },
       {
         id: 'ml-2',
         category: 'Norse Mythology',
@@ -149,30 +112,6 @@ export const LEVELS: Level[] = [
         ],
         correctAnswer: 'C',
       },
-      {
-        id: 'gh-4',
-        text: '關於銀河系的質量分佈，科學家薇拉．魯賓（Vera Rubin）發現了什麼矛盾現象？',
-        source: '看不見的暗物質',
-        options: [
-          { id: 'A', text: '可見物質的引力不足以維持盤面旋轉速度' },
-          { id: 'B', text: '核心黑洞不斷吞噬周圍恆星' },
-          { id: 'C', text: '恆星數量遠低於先前的估計值' },
-          { id: 'D', text: '銀河系正以超光速向外擴張' },
-        ],
-        correctAnswer: 'A',
-      },
-      {
-        id: 'gh-5',
-        text: '銀河系中除了發光的恆星與氣體，還有一種像「巨大球體」包裹著整個星系的隱形物質，它是什麼？',
-        source: '看不見的暗物質',
-        options: [
-          { id: 'A', text: '暗物質' },
-          { id: 'B', text: '星際塵埃雲' },
-          { id: 'C', text: '反物質' },
-          { id: 'D', text: '宇宙微波背景' },
-        ],
-        correctAnswer: 'A',
-      },
     ],
   },
   {
@@ -181,18 +120,6 @@ export const LEVELS: Level[] = [
     heroImage: import.meta.env.BASE_URL + 'images/hero_5.jpg',
     missionObjective: 'Orbital Surveillance: Seasonal Drift',
     questions: [
-      {
-        id: 's-1',
-        text: '在春季的臺灣夜空，雖然銀河本體難以看見，但在哪個星座方向可以觀測到眾多的遙遠星系？',
-        source: '銀河的四季風貌',
-        options: [
-          { id: 'A', text: '獵戶座' },
-          { id: 'B', text: '天蠍座' },
-          { id: 'C', text: '獅子座與室女座' },
-          { id: 'D', text: '仙后座' },
-        ],
-        correctAnswer: 'C',
-      },
       {
         id: 's-2',
         text: '夏季銀河中最明亮的區域位在哪個星座方向？此處也隱藏著超大質量黑洞。',
@@ -223,18 +150,6 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '地球附近退休軌道' },
         ],
         correctAnswer: 'D',
-      },
-      {
-        id: 'gm-2',
-        text: '蓋亞任務目前已發布多個版本的資料，預計哪一年會發布包含10年完整分析資料的DR5版本？',
-        source: '蓋亞資料發表',
-        options: [
-          { id: 'A', text: '2013年' },
-          { id: 'B', text: '2030年' },
-          { id: 'C', text: '2020年' },
-          { id: 'D', text: '2026年' },
-        ],
-        correctAnswer: 'B',
       },
       {
         id: 'gm-3',
@@ -280,18 +195,6 @@ export const LEVELS: Level[] = [
         correctAnswer: 'B',
       },
       {
-        id: 'fp-2',
-        text: '根據目前的觀測，仙女座星系正以大約多少速度向銀河系接近？',
-        source: '跨越億萬年的星際華爾滋',
-        options: [
-          { id: 'A', text: '每秒600公里' },
-          { id: 'B', text: '每秒110公里' },
-          { id: 'C', text: '時速8400萬公里' },
-          { id: 'D', text: '每秒30萬公里' },
-        ],
-        correctAnswer: 'B',
-      },
-      {
         id: 'fp-3',
         text: '當數十億年後銀河系與仙女座星系正式碰撞時，最不可能發生的現象是？',
         source: '雲氣擠壓與新星爆發',
@@ -331,18 +234,6 @@ export const LEVELS: Level[] = [
           { id: 'B', text: '紫外光' },
           { id: 'C', text: '可見光' },
           { id: 'D', text: '紅外線' },
-        ],
-        correctAnswer: 'D',
-      },
-      {
-        id: 'wt-2',
-        text: '韋伯望遠鏡拍攝的「蜘蛛星雲（Tarantula Nebula）」位於哪個銀河系鄰近的天體中？',
-        source: '星系產房：恆星誕生的生命搖籃',
-        options: [
-          { id: 'A', text: '仙女座星系' },
-          { id: 'B', text: '草帽星系' },
-          { id: 'C', text: '獵戶座大星雲' },
-          { id: 'D', text: '大麥哲倫星系' },
         ],
         correctAnswer: 'D',
       },
@@ -420,18 +311,6 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '全球最高天文台所在地' },
         ],
         correctAnswer: 'C',
-      },
-      {
-        id: 'c-5',
-        text: '位於南美洲智利的阿塔卡馬沙漠（Atacama Desert）為何被譽為「世界之眼」？',
-        source: '世界級銀河觀賞點',
-        options: [
-          { id: 'A', text: '因為那裡有全世界最大的隕石坑' },
-          { id: 'B', text: '沙漠地形酷似眼睛的形狀' },
-          { id: 'C', text: '是全球唯一可以看到所有88星座的地方' },
-          { id: 'D', text: '極乾空氣與極高晴天率吸引眾多頂尖望遠鏡進駐' },
-        ],
-        correctAnswer: 'D',
       },
     ],
   },
