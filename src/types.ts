@@ -10,6 +10,7 @@ export interface Question {
   correctAnswer: string;
   category?: string;
   source?: string;
+  explanation?: string;
 }
 
 export interface Level {

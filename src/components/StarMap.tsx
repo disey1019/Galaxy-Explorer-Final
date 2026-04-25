@@ -10,13 +10,84 @@ interface StarMapProps {
 }
 
 export const StarMap: React.FC<StarMapProps> = ({ onNodeClick, completedLevels }) => {
+  // 生成隨機的微小星塵位置
+  const [stardust] = React.useState(() => 
+    Array.from({ length: 40 }).map((_, i) => ({
+      id: i,
+      top: `${Math.random() * 100}%`,
+      left: `${Math.random() * 100}%`,
+      size: Math.random() * 2 + 1,
+      duration: Math.random() * 3 + 2,
+      delay: Math.random() * 5
+    }))
+  );
+
   return (
     <main 
-      className="relative min-h-screen w-full overflow-hidden bg-cover bg-center z-0"
-      style={{ 
-        backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.4)), url(https://www.eso.org/public/archives/images/screen/eso1339e.jpg)`,
-      }}
+      className="relative min-h-screen w-full overflow-hidden z-0 bg-[#05070A]"
     >
+      {/* Drifting Background Image */}
+      <motion.div 
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(5, 7, 10, 0.4), rgba(5, 7, 10, 0.4)), url(https://www.eso.org/public/archives/images/screen/eso1339e.jpg)`,
+        }}
+        animate={{
+          scale: [1, 1.05, 1],
+          rotate: [0, 0.5, 0],
+        }}
+        transition={{
+          duration: 30,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+
+      {/* Floating Stardust Particles */}
+      <div className="absolute inset-0 z-5 pointer-events-none">
+        {stardust.map(star => (
+          <motion.div
+            key={star.id}
+            className="absolute bg-white rounded-full opacity-20"
+            style={{ 
+              top: star.top, 
+              left: star.left, 
+              width: star.size, 
+              height: star.size,
+              boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
+            }}
+            animate={{
+              opacity: [0.1, 0.4, 0.1],
+              scale: [1, 1.2, 1],
+              y: [0, -20, 0]
+            }}
+            transition={{
+              duration: star.duration,
+              delay: star.delay,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Random Shooting Star Effect */}
+      <motion.div
+        className="absolute w-[2px] h-[2px] bg-white z-5 pointer-events-none"
+        style={{ top: '20%', left: '-10%' }}
+        animate={{
+          x: ['0vw', '120vw'],
+          y: ['0vh', '40vh'],
+          opacity: [0, 1, 0],
+          scaleX: [1, 20, 1]
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          repeatDelay: 8,
+          ease: "easeOut"
+        }}
+      />
       {/* 移除原本失效的備用層 */}
 
       {/* Nodes Layer */}

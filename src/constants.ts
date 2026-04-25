@@ -17,6 +17,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '靈魂之路' },
         ],
         correctAnswer: 'D',
+        explanation: '拉科塔族人將銀河視為靈魂通往來世的必經之路（Spirit Road），這體現了他們將星空與生命輪迴緊密結合的信仰。',
       },
     ],
   },
@@ -36,6 +37,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '科學家的夢境' },
         ],
         correctAnswer: 'C',
+        explanation: '宮澤賢治筆下的銀河鐵道象徵著為眾人尋求真正幸福的旅程，也是靈魂在星際間昇華與自我犧牲的隱喻。',
       },
     ],
   },
@@ -56,6 +58,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '眾神舉行宴會的地方' },
         ],
         correctAnswer: 'C',
+        explanation: '北歐寒冷漫長，銀河在冬夜中尤為清晰，被視為指引英勇戰士進入戰神奧丁「英靈殿」的神聖路徑。',
       },
     ],
   },
@@ -75,6 +78,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '英仙座旋臂' },
         ],
         correctAnswer: 'B',
+        explanation: '太陽系位於獵戶座旋臂（Orion Arm）的內側邊緣，這是一條位於英仙座旋臂與人馬座旋臂之間的較小旋臂。',
       },
       {
         id: 'gh-3',
@@ -87,6 +91,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '6000億倍' },
         ],
         correctAnswer: 'C',
+        explanation: '人馬座A*是一個位於銀河系中心的超大質量黑洞，其質量約為太陽的430萬倍，其強大引力控制著周圍星團的運作。',
       },
     ],
   },
@@ -107,6 +112,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '天琴座' },
         ],
         correctAnswer: 'A',
+        explanation: '人馬座方向正對著銀河系的中心，那裡恆星密度最高且氣體雲最豐富，因此觀測起來最為壯觀明亮。',
       },
     ],
   },
@@ -126,6 +132,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '地球附近退休軌道' },
         ],
         correctAnswer: 'D',
+        explanation: '蓋亞望遠鏡在完成多年精確的恆星測量任務後，已移至地球附近的退休軌道運行，避免干擾其他運作中的探測器。',
       },
       {
         id: 'gm-3',
@@ -138,6 +145,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '一顆位於銀河中心的新行星' },
         ],
         correctAnswer: 'C',
+        explanation: '蓋亞數據揭示了銀河系在100億年前曾吞併過一個名為恩克拉多斯的小星系，這是銀河系成長的重要里程碑。',
       },
     ],
   },
@@ -157,6 +165,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '黑洞吸積' },
         ],
         correctAnswer: 'B',
+        explanation: '超新星爆炸提供了極高的溫度與壓力，能讓原子核發生快中子捕獲反應，產生黃金、鈾等比鐵重的重元素。',
       },
       {
         id: 'fp-3',
@@ -169,6 +178,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '恆星與恆星之間發生直接對撞' },
         ],
         correctAnswer: 'D',
+        explanation: '星系雖然巨大，但內部恆星間的距離極遠，因此碰撞時恆星間發生直接對撞的機率幾乎為零。',
       },
     ],
   },
@@ -188,6 +198,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '紅外線' },
         ],
         correctAnswer: 'D',
+        explanation: '紅外線的波長較長，能繞過星際塵埃的散射，讓天文學家得以透視星雲，觀察內部新誕生的恆星與原行星盤。',
       },
     ],
   },
@@ -208,6 +219,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '最初的「種子黑洞」來源為何' },
         ],
         correctAnswer: 'D',
+        explanation: '最初的「種子黑洞」究竟是由第一代大質量恆星塌縮，還是宇宙早期氣體直接塌縮形成，目前仍是科學界的重大謎團。',
       },
     ],
   },
@@ -227,6 +239,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '十二月中的午夜' },
         ],
         correctAnswer: 'C',
+        explanation: '夏季午夜是銀河核心升至天頂最高的時刻，此時銀河會呈現橫跨南北地平線的巨大拱門狀或垂直立於地平線上。',
       },
       {
         id: 'c-3',
@@ -239,6 +252,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '初一的星星數量會特別多' },
         ],
         correctAnswer: 'B',
+        explanation: '月球是夜空中最強烈的天然光源。農曆初一前後（朔月）月光影響最小，天空背景最暗，能看清微弱的銀河光帶。',
       },
       {
         id: 'c-4',
@@ -251,6 +265,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '全球最高天文台所在地' },
         ],
         correctAnswer: 'C',
+        explanation: '合歡山於2019年榮獲國際暗天協會（IDA）認證，成為亞洲著名的國際暗空公園，是極佳的星空保護區。',
       },
     ],
   },
@@ -270,6 +285,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '星系的外觀型態及特性' },
         ],
         correctAnswer: 'D',
+        explanation: '哈伯序列主要依據星系的視覺外觀（如旋臂緊密程度、是否有棒狀結構等）將其分為橢圓、螺旋及不規則星系。',
       },
       {
         id: 'gs-2',
@@ -282,6 +298,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '本星系群' },
         ],
         correctAnswer: 'A',
+        explanation: '室女座星系團包含超過1300個星系，是距離本星系群最近的大型星系集合體。',
       },
       {
         id: 'gs-3',
@@ -294,6 +311,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '銀河系' },
         ],
         correctAnswer: 'A',
+        explanation: '仙女座星系是本星系群中最大的螺旋星系，其直徑約為22萬光年，包含的恆星數量約為銀河系的兩倍。',
       },
       {
         id: 'gs-4',
@@ -306,6 +324,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '星系與其他星系發生碰撞後的物質殘跡' },
         ],
         correctAnswer: 'C',
+        explanation: '密度波如同交通擁堵點，星際氣體經過此區域時被壓縮，引發強烈的恆星誕生作用，形成亮眼的旋臂。',
       },
       {
         id: 'gs-5',
@@ -318,6 +337,7 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '波長變短，光譜向藍端移動（藍移）' },
         ],
         correctAnswer: 'D',
+        explanation: '都卜勒效應指出，波源接近時頻率變高，光波長會變短，導致觀測到的光譜向光譜的藍端移動，稱為「藍移」。',
       },
     ],
   },
@@ -325,6 +345,7 @@ export const LEVELS: Level[] = [
 
 export const MAP_NODES: MapNode[] = [
   { id: 'n1', levelId: 'prehistoric-culture', icon: 'history', label: '銀河神話與史前文化', top: '10%', left: '15%' },
+  { id: 'n11', levelId: 'galaxy-structure', icon: 'network', label: '星系奇航：解密宇宙結構', top: '25%', left: '35%' },
   { id: 'n8', levelId: 'webb-telescope', icon: 'eye', label: '韋伯望遠鏡', top: '15%', left: '60%' },
   { id: 'n2', levelId: 'myths-legends', icon: 'book', label: '東西方的銀河傳說', top: '22%', left: '75%' },
   { id: 'n3', levelId: 'literature-art', icon: 'palette', label: '文學與藝術的銀河', top: '38%', left: '48%' },
@@ -334,5 +355,4 @@ export const MAP_NODES: MapNode[] = [
   { id: 'n6', levelId: 'gaia-mission', icon: 'rocket', label: '蓋亞任務', top: '72%', left: '30%' },
   { id: 'n7', levelId: 'future-past', icon: 'clock', label: '銀河的過去與未來', top: '82%', left: '50%' },
   { id: 'n9', levelId: 'black-hole', icon: 'disc', label: '超大質量黑洞', top: '88%', left: '78%' },
-  { id: 'n11', levelId: 'galaxy-structure', icon: 'network', label: '星系奇航：解密宇宙結構', top: '25%', left: '35%' },
 ];
