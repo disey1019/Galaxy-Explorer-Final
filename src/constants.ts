@@ -254,6 +254,73 @@ export const LEVELS: Level[] = [
       },
     ],
   },
+  {
+    id: 'galaxy-structure',
+    title: '星系奇航：解密宇宙結構',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_1.jpg',
+    questions: [
+      {
+        id: 'gs-1',
+        text: '星系可以分類。根據「哈伯音叉圖」的分類法，天文學家主要是依據星系的哪一項特徵來進行分類？',
+        source: '展示場三樓:哈伯星系分類',
+        options: [
+          { id: 'A', text: '星系與地球之間的相對距離' },
+          { id: 'B', text: '星系的化學元素組成比率' },
+          { id: 'C', text: '星系中心黑洞的質量大小' },
+          { id: 'D', text: '星系的外觀型態及特性' },
+        ],
+        correctAnswer: 'D',
+      },
+      {
+        id: 'gs-2',
+        text: '星系常因彼此間的重力作用而群聚成「星系團」。其中成員較少、體積較小的星系團也常被稱為「星系群」。離我們最近的星系團是哪一個？',
+        source: '展示場三樓:星系的群聚',
+        options: [
+          { id: 'A', text: '室女座星系團' },
+          { id: 'B', text: '后髮座星系團' },
+          { id: 'C', text: '仙女座星系團' },
+          { id: 'D', text: '本星系群' },
+        ],
+        correctAnswer: 'A',
+      },
+      {
+        id: 'gs-3',
+        text: '銀河系屬於「本星系群」。本星系群中哪一個星系的直徑最大，且包含約 1 兆顆恆星？',
+        source: '展示場三樓:本星系群',
+        options: [
+          { id: 'A', text: '仙女座星系 (M31)' },
+          { id: 'B', text: '三角座星系 (M33)' },
+          { id: 'C', text: 'M87 星系' },
+          { id: 'D', text: '銀河系' },
+        ],
+        correctAnswer: 'A',
+      },
+      {
+        id: 'gs-4',
+        text: '根據密度波理論，銀河系類別的螺旋星系旋臂是如何形成的？',
+        source: '展示場三樓:都卜勒效應',
+        options: [
+          { id: 'A', text: '恆星被永久鎖定在旋臂中跟隨星系整體轉動' },
+          { id: 'B', text: '由星系中心的黑洞噴射出的恆星物質所組成' },
+          { id: 'C', text: '星際介質與密度波交會並聚合形成新生恆星' },
+          { id: 'D', text: '星系與其他星系發生碰撞後的物質殘跡' },
+        ],
+        correctAnswer: 'C',
+      },
+      {
+        id: 'gs-5',
+        text: '仙女座星系正在接近銀河系。根據都卜勒效應，當發光的波源「接近」觀察者時，會產生什麼現象？',
+        source: '展示場三樓:都卜勒效應',
+        options: [
+          { id: 'A', text: '頻率變高，聲音變得尖銳' },
+          { id: 'B', text: '波長變長，光譜向紅端移動（紅移）' },
+          { id: 'C', text: '光速會因為波源移動而變慢' },
+          { id: 'D', text: '波長變短，光譜向藍端移動（藍移）' },
+        ],
+        correctAnswer: 'D',
+      },
+    ],
+  },
 ];
 
 export const MAP_NODES: MapNode[] = [
@@ -267,4 +334,5 @@ export const MAP_NODES: MapNode[] = [
   { id: 'n6', levelId: 'gaia-mission', icon: 'rocket', label: '蓋亞任務', top: '72%', left: '30%' },
   { id: 'n7', levelId: 'future-past', icon: 'clock', label: '銀河的過去與未來', top: '82%', left: '50%' },
   { id: 'n9', levelId: 'black-hole', icon: 'disc', label: '超大質量黑洞', top: '88%', left: '78%' },
+  { id: 'n11', levelId: 'galaxy-structure', icon: 'network', label: '星系奇航：解密宇宙結構', top: '25%', left: '35%' },
 ];

@@ -71,7 +71,7 @@ export const StarMap: React.FC<StarMapProps> = ({ onNodeClick, completedLevels }
 
           {/* Connection Lines (Static Placeholder or SVG Path) */}
           <svg className="absolute inset-0 -z-10 w-full h-full opacity-20 pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
-             <path d="M15,10 L60,15 L75,22 L48,38 L10,55 L65,52 L80,68 L30,72 L50,82 L78,88" fill="none" stroke="#22D3EE" strokeDasharray="1,1" strokeWidth="0.2" />
+             <path d="M15,10 L35,25 L60,15 L75,22 L48,38 L10,55 L65,52 L80,68 L30,72 L50,82 L78,88" fill="none" stroke="#22D3EE" strokeDasharray="1,1" strokeWidth="0.2" />
           </svg>
         </div>
       </div>
