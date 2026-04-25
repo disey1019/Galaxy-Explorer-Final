@@ -14,7 +14,6 @@ export const LevelView: React.FC<LevelViewProps> = ({ level, onBack, onComplete 
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showErrors, setShowErrors] = useState<boolean>(false);
   const [completed, setCompleted] = useState<boolean>(false);
-  const [submitted, setSubmitted] = useState<boolean>(false);
 
   const handleSelectOption = (questionId: string, optionId: string) => {
     setAnswers(prev => ({ ...prev, [questionId]: optionId }));
@@ -29,7 +28,6 @@ export const LevelView: React.FC<LevelViewProps> = ({ level, onBack, onComplete 
     }
 
     const allCorrect = level.questions.every(q => answers[q.id] === q.correctAnswer);
-    setSubmitted(true);
     
     if (allCorrect) {
       setCompleted(true);
@@ -175,38 +173,6 @@ export const LevelView: React.FC<LevelViewProps> = ({ level, onBack, onComplete 
                   第 {qIdx + 1} 題答案不正確，請重新思考。
                 </motion.div>
               )}
-
-              {/* 知識小百科 (Explanation) */}
-              <AnimatePresence>
-                {submitted && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    className="overflow-hidden"
-                  >
-                    <div className={cn(
-                      "mt-4 p-5 rounded-2xl border bg-primary/5 border-primary/20 relative",
-                      answers[question.id] === question.correctAnswer ? "border-emerald-500/30 bg-emerald-500/5" : "border-primary/20 bg-primary/5"
-                    )}>
-                      <div className="flex items-center gap-2 mb-2">
-                        <HelpCircle className={cn(
-                          "w-4 h-4",
-                          answers[question.id] === question.correctAnswer ? "text-emerald-500" : "text-primary"
-                        )} />
-                        <span className={cn(
-                          "text-xs font-display font-bold uppercase tracking-wider",
-                          answers[question.id] === question.correctAnswer ? "text-emerald-500" : "text-primary"
-                        )}>
-                          知識小百科
-                        </span>
-                      </div>
-                      <p className="text-sm text-on-surface/80 leading-relaxed font-sans">
-                        {question.explanation || "探索更多關於這個天文現象的奇妙知識！"}
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
             </section>
           ))}
         </div>
