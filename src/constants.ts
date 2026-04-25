@@ -257,7 +257,7 @@ export const LEVELS: Level[] = [
   {
     id: 'galaxy-structure',
     title: '星系奇航：解密宇宙結構',
-    heroImage: import.meta.env.BASE_URL + 'images/hero_1.jpg',
+    heroImage: import.meta.env.BASE_URL + 'images/hero_11.png',
     questions: [
       {
         id: 'gs-1',
