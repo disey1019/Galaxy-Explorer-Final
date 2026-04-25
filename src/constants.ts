@@ -18,18 +18,6 @@ export const LEVELS: Level[] = [
         ],
         correctAnswer: 'D',
       },
-      {
-        id: 'pc-2',
-        text: '澳洲原住民觀測銀河時，將其中的「暗雲」區域想像成什麼動物？',
-        source: '澳洲原住民',
-        options: [
-          { id: 'A', text: '鴯鶓' },
-          { id: 'B', text: '袋鼠' },
-          { id: 'C', text: '獵鷹' },
-          { id: 'D', text: '無尾熊' },
-        ],
-        correctAnswer: 'A',
-      },
     ],
   },
   {
@@ -87,18 +75,6 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '英仙座旋臂' },
         ],
         correctAnswer: 'B',
-      },
-      {
-        id: 'gh-2',
-        text: '太陽系繞行銀河系中心一週大約需要多少年？',
-        source: '銀河中的太陽系',
-        options: [
-          { id: 'A', text: '1千萬年' },
-          { id: 'B', text: '1百萬年' },
-          { id: 'C', text: '130億年' },
-          { id: 'D', text: '2億5千萬年' },
-        ],
-        correctAnswer: 'D',
       },
       {
         id: 'gh-3',
@@ -163,18 +139,6 @@ export const LEVELS: Level[] = [
         ],
         correctAnswer: 'C',
       },
-      {
-        id: 'gm-4',
-        text: '在銀河中心發現的兩股古老恆星流「濕婆（Shiva）」與「沙克蒂（Shakti）」，其特點為何？',
-        source: '發現古老恆星流',
-        options: [
-          { id: 'A', text: '見證了銀河系盤面形成前的初期樣貌' },
-          { id: 'B', text: '是由仙女座星系噴射而出的恆星' },
-          { id: 'C', text: '正以超光速遠離銀河中心' },
-          { id: 'D', text: '含有極豐富的金屬元素' },
-        ],
-        correctAnswer: 'A',
-      },
     ],
   },
   {
@@ -205,18 +169,6 @@ export const LEVELS: Level[] = [
           { id: 'D', text: '恆星與恆星之間發生直接對撞' },
         ],
         correctAnswer: 'D',
-      },
-      {
-        id: 'fp-4',
-        text: '銀河系與仙女座星系合併後的最終終點站，預期會形成哪種形狀的星系？',
-        source: '旋臂重組與消逝',
-        options: [
-          { id: 'A', text: '不規則星系' },
-          { id: 'B', text: '棒狀星系' },
-          { id: 'C', text: '橢圓星系' },
-          { id: 'D', text: '更大的螺旋星系' },
-        ],
-        correctAnswer: 'C',
       },
     ],
   },
@@ -264,18 +216,6 @@ export const LEVELS: Level[] = [
     title: '適合觀賞銀河的條件',
     heroImage: import.meta.env.BASE_URL + 'images/hero_10.jpg',
     questions: [
-      {
-        id: 'c-1',
-        text: '在冬季觀看銀河，會發現其光澤較為淡淡白光，這是因為我們正望向銀河系的哪個方向？',
-        source: '觀賞銀河的季節',
-        options: [
-          { id: 'A', text: '黑洞的陰影區' },
-          { id: 'B', text: '銀河中心' },
-          { id: 'C', text: '外圍旋臂區域' },
-          { id: 'D', text: '另一個宇宙的邊界' },
-        ],
-        correctAnswer: 'C',
-      },
       {
         id: 'c-2',
         text: '在臺灣觀賞夏季銀河時，若想看到最壯觀的垂直銀河，哪段時間最適合？',
